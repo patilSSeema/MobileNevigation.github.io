@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(219, 116, 245);
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.bdy1{
+  height: 100vh;
+  margin: 0;
+  /* background-image: url("https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") !important; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(20px);
+}
+
+.bdy2{
+  height: 100vh;
+  margin: 0;
+  /* background-image: url("https://cdn.tapetender70er.de/media/image/d3/4e/3c/Asana-B_864481_518x389.webp"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(20px);
+}
+
+.phone {
+  position: relative;
+  overflow: hidden;
+  border: 2px inset rgb(43, 40, 42);
+  border-radius: 15px;
+  height: 95%;
+  /* height: 600px; */
+  /* width: 340px; */
+  width: 300px;
+  /* box-shadow: 0 0 25px black; */
+}
+
+.phone .content {
+  opacity: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 60px);
+  width: 100%;
+  /* transition: opacity 0.6s ease; */
+  filter: brightness(65%);
+}
+
+.phone .content.show {
+  opacity: 1;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+}
+
+nav ul {
+  background-color: #616166;
+  border-top: 3px solid rgb(34, 32, 33);
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+}
+
+nav li {
+  color: rgb(8, 20, 59);
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+nav ul li:hover{
+  color: #bbce11;
+}
+nav ul li.active {
+  color: rgb(181, 223, 226);
+}
+
+/* @media screen and (max-width: 360px) {
+  .phone{
+    width: 76%;
+    height: 94%;
+    margin-top: 10%;
+  }
+} */
